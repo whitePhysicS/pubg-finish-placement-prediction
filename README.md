@@ -55,8 +55,16 @@ PUBG_Win_Prediction/
 ```
 
 # ⚙️ How to Run Locally
-1. Download the project: Download the project files and unzip them into a folder
-2. Create and Activate Virtual Environment: Open a terminal in the project folder and run the following commands to create a clean enviroment:
+1.  **Download the project:**
+    Clone this repository or download the files.
+
+2.  **Download the Dataset:**
+    The dataset is too large to be included in the repository.
+    * Go to: [PUBG Finish Placement Prediction (Kaggle)](https://www.kaggle.com/c/pubg-finish-placement-prediction/data)
+    * Download `train_V2.csv`.
+    * Create a folder named `data/raw/` inside the project directory.
+    * Place the `train_V2.csv` file into `data/raw/`.
+3. Create and Activate Virtual Environment: Open a terminal in the project folder and run the following commands to create a clean enviroment:
   - Windows:
     ```bash
     python -m venv env
@@ -67,11 +75,11 @@ PUBG_Win_Prediction/
     python3 -m venv env
     source venv/bin/activate
     ```
-3. Install dependencies: Once the enviroment is active, install the required libraries:
+4. Install dependencies: Once the enviroment is active, install the required libraries:
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the App:
+5. Run the App:
    ```bash
    streamlit run app.py
    ```
