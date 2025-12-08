@@ -1,5 +1,7 @@
 # 🎮 PUBG Finish Placement Prediction (End-to-End ML Project)
 
+## Live Demo 👉 **[ Click Here to Open the Web App](https://pubg-finish-placement-prediction-ygbtrl3jmca5th3hbjdwbv.streamlit.app/)
+
 ## 📍 Project Overview
 This project aims to predict the final ranking (**WinPlacePerc**) of a player in a **PUBG (PlayerUnknown's Battlegrounds)** match using Machine Learning. By analyzing in-game statistics such as kills, movement distance, and support items, we developed a model to estimate the winning probability.
 
@@ -35,6 +37,7 @@ To improve the model, several new features were derived:
 * **Data Processing:** Pandas, NumPy
 * **Web App:** Streamlit
 * **Visualization:** Matplotlib, Seaborn
+* **Deployment:** Streamlit Cloud
 
 ## 📂 Project Structure
 ```text
@@ -83,3 +86,4 @@ PUBG_Win_Prediction/
    ```bash
    streamlit run app.py
    ```
+## Deployement Link:
