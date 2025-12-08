@@ -3,8 +3,11 @@ import numpy as np
 import joblib
 import os
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, 'models', 'pubg_model.pkl')
+
 class PUBG_Predictor:
-    def __init__(self, model_path='../pubg_predictor/models/pubg_model.pkl'):
+    def __init__(self, model_path=MODEL_PATH):
         
         "Modeli yükler ve kullanıma hazırlar."
         
@@ -117,4 +120,5 @@ if __name__ == "__main__":
     })
     
     sonuc = predictor.predict(dummy_data)
+
     print(f"Pred Results: {sonuc}")
